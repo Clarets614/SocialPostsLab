@@ -1,0 +1,17 @@
+
+.open-sans-mystyle {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 75;
+  }
+  
+  .outercontainer{
+      text-align: center;
+      margin: auto;
+      padding: 20px;
+      background: #B1DDEA ;
+      box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.5);
+  }
+  

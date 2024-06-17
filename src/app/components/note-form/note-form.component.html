@@ -1,0 +1,20 @@
+<p><button (click)="toggleDisplay()"> + note</button></p>
+<div>
+@if(display){
+
+    <div class="innercontainer">
+<h4>Add Note</h4>
+<p>Title: </p>
+<input type="text" [(ngModel)]="formPost.title"/>
+
+<p>Thought:</p>
+<input type="text" [(ngModel)]="formPost.thought" />
+<button (click)="submitForm()">Add</button>
+
+
+
+    </div>
+
+
+}
+</div>
