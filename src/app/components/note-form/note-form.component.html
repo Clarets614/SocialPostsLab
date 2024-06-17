@@ -2,7 +2,8 @@
 <div>
 @if(display){
 
-    <div class="innercontainer">
+    <div class="blur">
+        <div class="form">
 <h4>Add Note</h4>
 <p>Title: </p>
 <input type="text" [(ngModel)]="formPost.title"/>
@@ -10,7 +11,8 @@
 <p>Thought:</p>
 <input type="text" [(ngModel)]="formPost.thought" />
 <button (click)="submitForm()">Add</button>
-
+<button (click)="toggleDisplay()"> cancel</button>
+</div>
 
 
     </div>

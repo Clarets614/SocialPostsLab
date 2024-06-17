@@ -1,9 +1,9 @@
 <div class="outercontainer">
 
-@for (i of allNotes; track $index) {
+@for (i of allNotes.reverse(); track $index) {
     <app-note (deleteEvent)="deletePost($event)" [displayNote]="i"></app-note>
 }
 
-<app-note-form (CreatedEvent)="addNote($event)"></app-note-form>
+<app-note-form (submitted)="addNote($event)"></app-note-form>
 
 </div>

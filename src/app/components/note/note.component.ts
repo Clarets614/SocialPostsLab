@@ -17,4 +17,7 @@ export class NoteComponent {
     this.deleteEvent.emit(this.displayNote);
   }
 
+  upvote():void{
+    this.displayNote.likes++;
+  }
 }

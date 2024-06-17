@@ -11,14 +11,15 @@ import { Post } from '../../models/post';
 })
 export class NoteFormComponent {
   formPost: Post = {} as Post;
-  @Output() CreatedEvent = new EventEmitter<Post>();
+  @Output() submitted = new EventEmitter<Post>();
   
   display: boolean = false;
 
   submitForm():void{
     let newPost:Post = { ...this.formPost};
-    this.CreatedEvent.emit(newPost)
+    this.submitted.emit(newPost)
     this.formPost = {} as Post;
+    this.toggleDisplay();
   }
 
   toggleDisplay(){

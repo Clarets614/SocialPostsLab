@@ -1,6 +1,10 @@
 <div class="innercontainer">
+    <div>
 <h3 class="posthead">{{displayNote.title}}</h3>
 <p>{{displayNote.thought}}</p>
-<button (click)="emitDelete()">remove</button>
+</div>
 
+<div><button (click)="upvote()">{{displayNote.likes}} &uarr;</button>
+<button (click)="emitDelete()">remove</button>
+</div>
 </div>

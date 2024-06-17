@@ -15,11 +15,13 @@ export class NotesListComponent {
   allNotes:Post[] = [
     {
          title: "Thought of the day",
-    thought: "A bit of good music can make you focus" 
+    thought: "A bit of good music can make you focus" ,
+    likes: 0
     },
     {
       title: "Song Quote of the Day",
- thought: "'Cause you can't jump the track we're like cars on a cable and life's like an hourglass glued to the table" 
+ thought: "'Cause you can't jump the track we're like cars on a cable and life's like an hourglass glued to the table",
+ likes:0 
  }
 
 
